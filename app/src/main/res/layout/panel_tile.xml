@@ -15,8 +15,8 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="100dp"
-    android:layout_height="100dp"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
     android:layout_margin="4dp"
     android:background="@drawable/tile_background"
     android:orientation="vertical"
@@ -25,8 +25,8 @@
 
     <ImageView
         android:id="@+id/tile_icon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
         android:src="@drawable/ic_search"
         android:tint="?android:attr/textColor" />
 
@@ -41,9 +41,8 @@
         android:layout_height="wrap_content"
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
-        android:singleLine="true"
         android:text="@string/app_search_title"
-        android:textSize="13sp" />
+        android:textSize="8sp" />
 
     <TextView
         android:id="@+id/tile_summary"
@@ -54,6 +53,6 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
         android:text="@string/app_search_title"
-        android:textSize="11sp" />
+        android:textSize="6sp" />
 
 </LinearLayout>
