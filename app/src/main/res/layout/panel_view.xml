@@ -69,14 +69,15 @@
                     android:format12Hour="@string/date_format"
                     android:format24Hour="@string/date_format"
                     android:textSize="16sp" />
-            </LinearLayout>
-
+                    
             <io.chaldeaprjkt.gamespace.widget.BatteryView
                 android:id="@+id/battery_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
+                android:layout_marginLeft="75dp"
                 android:textSize="16sp" />
+
+            </LinearLayout>
 
             <include layout="@layout/tiles" />
 
