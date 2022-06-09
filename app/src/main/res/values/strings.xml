@@ -40,6 +40,12 @@
     <string name="stay_awake_title">Stay awake</string>
     <string name="lock_gesture_title">Lock gesture</string>
 
+    <!-- Notification Mode -->
+    <string name="notification_mode_title">Notification mode</string>
+    <string name="notification_mode_hide">Do not show</string>
+    <string name="notification_mode_headsup">Show as heads up</string>
+    <string name="notification_mode_reticker">Show as reTicker</string>
+
     <string name="ringer_mode_title">Ringer mode</string>
     <string name="ringer_mode_silent">Silent</string>
     <string name="ringer_mode_vibrate">Vibrate</string>
