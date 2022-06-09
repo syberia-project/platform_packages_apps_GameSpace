@@ -82,4 +82,9 @@
     <string name="notification_headsup">Heads Up</string>
     <string name="notification_reticker">reTicker</string>
     <string name="notification_danmaku">Danmaku</string>
+
+    <string name="in_game_calls_title">In-game call</string>
+    <string name="in_game_calls_no_action">No action</string>
+    <string name="in_game_calls_auto_answer">Auto answer</string>
+    <string name="in_game_calls_auto_reject">Auto reject</string>
 </resources>
