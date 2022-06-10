@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="13dp">
                 
             <TextClock
                 android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:textColor="?android:attr/colorAccent"
                 android:format12Hour="h:mm"
                 android:format24Hour="H:mm"
-                android:textSize="28sp" />
+                android:textSize="26sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,18 +68,25 @@
                     android:fontFamily="@*android:string/config_lightFontFamily"
                     android:format12Hour="@string/date_format"
                     android:format24Hour="@string/date_format"
-                    android:textSize="16sp" />
+                    android:textSize="13sp" />
                     
             <io.chaldeaprjkt.gamespace.widget.BatteryView
                 android:id="@+id/battery_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="75dp"
-                android:textSize="16sp" />
+                android:textSize="13sp" />
 
             </LinearLayout>
 
             <include layout="@layout/tiles" />
+
+            <io.chaldeaprjkt.gamespace.widget.MemoryView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="13sp" />
 
         </LinearLayout>
     </ScrollView>
