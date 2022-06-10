@@ -69,24 +69,25 @@
                     android:format12Hour="@string/date_format"
                     android:format24Hour="@string/date_format"
                     android:textSize="13sp" />
-                    
-            <io.chaldeaprjkt.gamespace.widget.BatteryView
+                
+            <io.chaldeaprjkt.gamespace.widget.MemoryView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@*android:string/config_lightFontFamily"
+                android:layout_marginLeft="35dp"
+                android:textSize="13sp" />
+
+           <io.chaldeaprjkt.gamespace.widget.BatteryView
                 android:id="@+id/battery_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="75dp"
+                android:fontFamily="@*android:string/config_lightFontFamily"
+                android:layout_marginLeft="4dp"
                 android:textSize="13sp" />
-
+                    
             </LinearLayout>
 
             <include layout="@layout/tiles" />
-
-            <io.chaldeaprjkt.gamespace.widget.MemoryView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:gravity="center"
-                android:textSize="13sp" />
 
         </LinearLayout>
     </ScrollView>
