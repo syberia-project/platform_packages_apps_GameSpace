@@ -68,31 +68,31 @@
                     android:fontFamily="@*android:string/config_lightFontFamily"
                     android:format12Hour="@string/date_format"
                     android:format24Hour="@string/date_format"
-                    android:textSize="13sp" />
+                    android:textSize="12sp" />
                 
             <io.chaldeaprjkt.gamespace.widget.MemoryView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@*android:string/config_lightFontFamily"
-                android:layout_marginLeft="20dp"
-                android:textSize="13sp" />
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp" />
+
+             <TextView
+                android:id="@+id/batteryTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@*android:string/config_lightFontFamily"
+                android:textSize="12sp" />
 
            <io.chaldeaprjkt.gamespace.widget.BatteryView
                 android:id="@+id/battery_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@*android:string/config_lightFontFamily"
-                android:layout_marginLeft="4dp"
-                android:textSize="13sp" />
-
-                    <TextView
-                        android:id="@+id/batteryTemp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="4dp"
-                        android:fontFamily="@*android:string/config_lightFontFamily"
-                        android:textSize="13sp" />
-
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp" />
+                        
             </LinearLayout>
 
             <include layout="@layout/tiles" />
