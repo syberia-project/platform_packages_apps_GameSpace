@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@*android:string/config_lightFontFamily"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="20dp"
                 android:textSize="13sp" />
 
            <io.chaldeaprjkt.gamespace.widget.BatteryView
@@ -84,7 +84,15 @@
                 android:fontFamily="@*android:string/config_lightFontFamily"
                 android:layout_marginLeft="4dp"
                 android:textSize="13sp" />
-                    
+
+                    <TextView
+                        android:id="@+id/batteryTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:fontFamily="@*android:string/config_lightFontFamily"
+                        android:textSize="13sp" />
+
             </LinearLayout>
 
             <include layout="@layout/tiles" />

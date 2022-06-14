@@ -16,8 +16,12 @@
 package io.chaldeaprjkt.gamespace.widget
 
 import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.os.BatteryManager
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.widget.TextView
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
@@ -45,6 +49,16 @@ class PanelView @JvmOverloads constructor(
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
         applyRelativeLocation()
+        batteryTemperature()
+    }
+
+    private fun batteryTemperature() {
+        val intent: Intent =
+            context.registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))!!
+        val temp = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0).toFloat() / 10
+        val degree = "\u2103"
+        val batteryTemp:TextView = findViewById(R.id.batteryTemp)
+        batteryTemp.text = "Temp: $temp$degree"
     }
 
     private fun applyRelativeLocation() {
