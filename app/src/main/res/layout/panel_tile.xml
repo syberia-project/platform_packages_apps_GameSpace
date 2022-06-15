@@ -42,7 +42,7 @@
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="@string/app_search_title"
-        android:textSize="10sp" />
+        android:textSize="9sp" />
 
     <TextView
         android:id="@+id/tile_summary"
@@ -53,6 +53,6 @@
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
         android:text="@string/app_search_title"
-        android:textSize="8sp" />
+        android:textSize="7sp" />
 
 </LinearLayout>

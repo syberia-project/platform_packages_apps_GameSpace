@@ -34,68 +34,66 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="13dp">
-                
-            <TextClock
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:fontFamily="@*android:string/config_lightFontFamily"
-                android:textColor="?android:attr/colorAccent"
-                android:format12Hour="h:mm"
-                android:format24Hour="H:mm"
-                android:textSize="26sp" />
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <TextClock
                     android:id="@+id/time_view"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_alignParentStart="true" 
                     android:fontFamily="@*android:string/config_lightFontFamily"
+                    android:gravity="start|center_vertical"
                     android:format12Hour="h:mm"
-                    android:format24Hour="H:mm"
-                    android:textSize="0sp" />
+                    android:format24Hour="kk:mm"
+                    android:textSize="26sp" />
 
                 <TextClock
                     android:id="@+id/date_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_alignParentEnd="true" 
                     android:fontFamily="@*android:string/config_lightFontFamily"
-                    android:format12Hour="@string/date_format"
-                    android:format24Hour="@string/date_format"
-                    android:textSize="12sp" />
-                
-            <io.chaldeaprjkt.gamespace.widget.MemoryView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@*android:string/config_lightFontFamily"
-                android:layout_marginLeft="10dp"
-                android:textSize="12sp" />
+                    android:gravity="end|center_vertical"
+                    android:format12Hour="EEE, MMM d"
+                    android:format24Hour="EEE, MMM d"
+                    android:textSize="26sp" />
+            </RelativeLayout>
 
-             <TextView
-                android:id="@+id/batteryTemp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:fontFamily="@*android:string/config_lightFontFamily"
-                android:textSize="12sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-           <io.chaldeaprjkt.gamespace.widget.BatteryView
-                android:id="@+id/battery_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@*android:string/config_lightFontFamily"
-                android:layout_marginLeft="8dp"
-                android:textSize="12sp" />
-                        
-            </LinearLayout>
+                <io.chaldeaprjkt.gamespace.widget.BatteryView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_alignParentStart="true" 
+                    android:gravity="start|center_vertical"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/batteryTemp"   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_alignParentEnd="true" 
+                    android:gravity="end|center_vertical"
+                    android:textSize="13sp" />
+            </RelativeLayout>
 
             <include layout="@layout/tiles" />
+
+            <io.chaldeaprjkt.gamespace.widget.MemoryView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="13sp" />
 
         </LinearLayout>
     </ScrollView>
