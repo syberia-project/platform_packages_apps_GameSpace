@@ -69,7 +69,7 @@
 
     <string name="date_format" translatable="false">EEEE, MMM d</string>
 
-    <string name="battery_format">&#128267;<xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
-    <string name="memory_format">RAM: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="battery_format">Battery: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
+    <string name="memory_format">Memory: <xliff:g id="percentage" example="100">%1$d%%</xliff:g></string>
 
 </resources>

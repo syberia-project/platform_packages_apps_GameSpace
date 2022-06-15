@@ -72,7 +72,7 @@ public class MemoryView extends TextView {
         public void run() {
             ActivityManager.MemoryInfo memInfo = new ActivityManager.MemoryInfo();
             mActivityManager.getMemoryInfo(memInfo);
-            int availMemMiB = (int)((memInfo.availMem / 1048576L) + 576);
+            int availMemMiB = (int)(memInfo.availMem / 1048576L);
             int totalMemMiB = (int)(memInfo.totalMem / 1048576L);
             int percentMem = (int)(Math.round(availMemMiB * 100.0 / totalMemMiB));
             setText(getContext().getString(R.string.memory_format, percentMem));
