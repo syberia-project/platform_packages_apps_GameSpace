@@ -40,28 +40,28 @@
                 android:layout_height="wrap_content">
 
                 <TextClock
-                    android:id="@+id/time_view"
+                    android:id="@+id/date_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_alignParentStart="true" 
                     android:fontFamily="@*android:string/config_lightFontFamily"
                     android:gravity="start|center_vertical"
-                    android:format12Hour="h:mm"
-                    android:format24Hour="kk:mm"
-                    android:textSize="18sp" />
+                    android:format12Hour="EEE, MMM d"
+                    android:format24Hour="EEE, MMM d"
+                    android:textSize="13sp" />
 
                 <TextClock
-                    android:id="@+id/date_view"
+                    android:id="@+id/time_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
                     android:layout_alignParentEnd="true" 
                     android:fontFamily="@*android:string/config_lightFontFamily"
                     android:gravity="end|center_vertical"
-                    android:format12Hour="EEE, MMM d"
-                    android:format24Hour="EEE, MMM d"
-                    android:textSize="18sp" />
+                    android:format12Hour="h:mm"
+                    android:format24Hour="kk:mm"
+                    android:textSize="13sp" />
             </RelativeLayout>
 
             <RelativeLayout
