@@ -32,6 +32,7 @@
     <string name="three_screenshot_disabled_title">Отключить скриншот свайпом</string>
     <string name="state_enabled">включено</string>
     <string name="state_disabled">отключено</string>
+    <string name="add_item">Добавить</string>
 
     <!-- Game Mode -->
     <string name="game_mode_title">Режим</string>
@@ -44,6 +45,7 @@
     <string name="fps_Info_title">FPS инфо</string>
     <string name="stay_awake_title">Оставить включенным</string>
     <string name="stay_awake_summary">Не выключать экран во время игры</string>
+    <string name="lock_gesture_title">Блокировка жестов</string>
 
     <string name="ringer_mode_title">Режим звонка</string>
     <string name="ringer_mode_silent">Тишина</string>
