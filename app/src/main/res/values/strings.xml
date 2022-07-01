@@ -28,6 +28,7 @@
     <string name="three_screenshot_disabled_title">Disable swipe to screenshot</string>
     <string name="state_enabled">enabled</string>
     <string name="state_disabled">disabled</string>
+    <string name="add_item">Add</string>
 
     <!-- Game Mode -->
     <string name="game_mode_title">Mode</string>
