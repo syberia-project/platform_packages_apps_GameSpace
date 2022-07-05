@@ -58,7 +58,7 @@ class PanelView @JvmOverloads constructor(
         val temp = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, 0).toInt() / 10
         val degree = "\u2103"
         val batteryTemp:TextView = findViewById(R.id.batteryTemp)
-        batteryTemp.text = "Temp: $temp$degree"
+        batteryTemp.text = "$temp$degree"
     }
 
     private fun applyRelativeLocation() {
