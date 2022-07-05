@@ -28,7 +28,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/ic_search"
-        android:tint="?android:attr/textColor" />
+        android:tint="?android:attr/textColorPrimaryInverse" />
 
     <View
         android:layout_width="0dp"

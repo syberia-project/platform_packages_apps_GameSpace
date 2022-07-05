@@ -31,11 +31,11 @@
 
     <style name="GameSpaceTheme.Panel" parent="GameSpaceTheme">
         <item name="cardBackgroundColor">@color/surface</item>
-        <item name="android:textColor">@color/onSurface</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
     </style>
 
     <style name="GameSpaceTheme.Panel.Tile">
-        <item name="android:textColor">@color/onSurface</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
     </style>
 
 </resources>
