@@ -51,6 +51,7 @@
     <string name="ringer_mode_silent">Тишина</string>
     <string name="ringer_mode_vibrate">Вибрация</string>
     <string name="ringer_mode_normal">Нормальный</string>
+    <string name="ringer_mode_no_change">Не изменять</string>
 
     <string name="suppress_fullscreen_intent_title">Блокировать полноэкранные события</string>
     <string name="suppress_fullscreen_intent_summary">Предотвращение полноэкранных событий, таких как входящие вызовы во время игры</string>
@@ -72,5 +73,12 @@
 
     <string name="adb_disabled_title">Отключить отладку по USB</string>
     <string name="adb_disabled_summary">Временное отключение отладки по USB во время игры</string>
+
+    <!-- Notification Mode -->
+    <string name="notification_mode_title">Уведомления</string>
+    <string name="notification_mode_hide">Не показывать</string>
+    <string name="notification_mode_headsup">Обычные</string>
+    <string name="notification_mode_reticker">Бегущая строка</string>
+    <string name="notification_mode_danmaku">Danmaku</string>
 
 </resources>
